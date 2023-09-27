@@ -4,7 +4,9 @@
 }
 
 body {
-}
+  display: flex;
+  height: 100%;
+  }
 .signUp-btn a {
   color: #6ceec7;
 }
@@ -47,8 +49,8 @@ body {
 }
 .main-c {
   display: flex;
-  width: 650px;
   
+  overflow-y: auto;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -58,9 +60,11 @@ body {
 .inputs-bc {
   display: flex;
   max-width: 650px;
+  height: 100%;
   gap: 24px;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 .inputs-bc:last-child {
     justify-content: flex-start;
