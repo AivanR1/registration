@@ -60,7 +60,7 @@ body {
 .inputs-bc {
   display: flex;
   max-width: 650px;
-  height: 100%;
+  
   gap: 24px;
   flex-wrap: wrap;
   justify-content: center;
