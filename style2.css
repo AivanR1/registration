@@ -77,7 +77,7 @@ body {
   width: 296px;
   height: 56px;
   border: 2px solid white;
-  gap: 15px;
+ 
   position: relative;
   background-color: transparent;
 }
@@ -141,15 +141,16 @@ body {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  border: transparent;
   
-  margin-right: 5px ;
+  height: 100%;
 }
 #country :focus{
     border: transparent;
 }
 .countryButton {
   width: 200px;
-  margin-right: 10px;
+ 
   display: flex;
   background-color: transparent;
   justify-content: flex-start;
