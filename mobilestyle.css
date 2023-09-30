@@ -1,0 +1,18 @@
+@media all and (max-width: 650px) {
+    .body{
+        justify-content: center;
+        align-items: center;
+    };
+    .signUp-btn {
+        width: 300px;
+        background-color: aquamarine;
+    };
+    .main-c{
+        display: none;
+        justify-content:center ;
+        align-items: center;
+    }
+    .inputs-bc{
+    align-items: center;
+    }
+}
