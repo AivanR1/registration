@@ -1,6 +1,6 @@
 @media screen and (max-width: 650px) {
-  body {
-    justify-content: center;
+  .background{
+    position: relative;
     
     /* background: brown; */
   }
@@ -12,8 +12,9 @@
   .signUp-btn a{
     color: black;}
   .main-c {
+    justify-content: space-around;
+    align-items: center;
     
-    justify-content: space-evenly;
     
   }
   
