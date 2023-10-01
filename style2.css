@@ -6,17 +6,6 @@
 body {
   display: flex;
   height: 100%;
-  
-  }
-.signUp-btn a {
-  color: #6ceec7;
-}
-.signUp-btn a:hover{
-    color: black;
-}
-.signUp-btn:hover {
-  color: black;
-  background-color: #6ceec7;
 }
 
 .background {
@@ -50,38 +39,36 @@ body {
 }
 .main-c {
   display: flex;
-  
+  position: relative;
+  z-index: 100;
   overflow-y: auto;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  /* align-items: center; */
   height: 100%;
 }
 
 .inputs-bc {
   display: flex;
   max-width: 650px;
-  
+
   gap: 24px;
   flex-wrap: wrap;
-  align-items: center;
-  
+  /* align-items: center; */
+
   justify-content: center;
 }
-.inputs-bc:last-child {
-    justify-content: flex-start;
-    }
 
 
 
 .input-c {
   display: flex;
   align-items: center;
-  position: relative;
+
 }
+
 input:focus,
-input:valid{
-  
+input:valid {
 }
 .input-cont {
   width: 296px;
@@ -90,6 +77,19 @@ input:valid{
   border-radius: 5px;
   position: relative;
   background-color: transparent;
+}
+.input-description {
+  position: absolute;
+  top: 2px;
+  left: 45px;
+  display: none;
+}
+.input-cont:hover .input-description {
+display: flex;
+}
+.input-cont:hover input{
+  padding-top: 30px;
+  height: 26px;
 }
 
 /* .input-cont:focus {
@@ -111,7 +111,6 @@ input:valid{
   font-style: normal;
   font-weight: 300;
   line-height: normal;
- 
 }
 
 .input-countryH {
@@ -127,9 +126,8 @@ input:valid{
   transition: transform 200ms;
   display: none;
 }
-.input-countryH:focus{
-  
-    transform: translateX(10px);
+.input-countryH:focus {
+  transform: translateX(10px);
 }
 
 /* 
@@ -141,21 +139,24 @@ input:valid{
   position: absolute;
   left: 16px;
 }
-#country {
-    background-color: transparent;
-    width: 100%;
-    color: #e0e0e08d;
-    border: transparent;
-    font-family: Rubik;
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
+.country_select {
+  background-color: transparent;
+  width: 100%;
+  color: #e0e0e08d;
   border: transparent;
-  
+  font-family: Rubik;
+  font-size: 19px;
+  font-weight: 300;
+  border: transparent;
+  padding-left: 40px;
+
   height: 100%;
 }
-#country #Ukraine {
+.country_select option {
+  color: black;
+  padding-left: 10px;
+}
+/* #country #Ukraine {
   color: black;
 }
 #country #France { 
@@ -172,7 +173,7 @@ input:valid{
   display: flex;
   background-color: transparent;
   justify-content: flex-start;
-}
+} */
 .country-btn::before {
 }
 /* #dropdownBlock{
@@ -187,6 +188,7 @@ border: 1px solid #FFF;
 background: #FFF; */
 
 .signUp-btn {
+  cursor: pointer;
   width: 171px;
   height: 56px;
   border: 3px solid #6ceec7;
@@ -198,10 +200,19 @@ background: #FFF; */
   text-align: center;
   font-family: Rubik;
   font-size: 19px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   text-decoration: none;
+}
+.signUp-btn a {
+  color: #6ceec7;
+}
+.signUp-btn:hover  a{
+  color: black;
+}
+.signUp-btn:hover {
+  color: black;
+  background-color: #6ceec7;
+  /* position: static; */
 }
 .signUp-btn a {
   text-decoration: none;
@@ -230,13 +241,13 @@ background: #FFF; */
   align-items: center;
   background-color: transparent;
 }
- .checkbox:hover{
-   background-color: #6CEEC7; 
-} 
-.checkbox:focus{
-    background-image: url(./images/check-icon.png); 
-    background-color: #6CEEC7;
- } 
+.checkbox:hover {
+  background-color: #6ceec7;
+}
+.checkbox:focus {
+  background-image: url(./images/check-icon.png);
+  background-color: #6ceec7;
+}
 .checkbox::before {
   background-color: #6ceec7;
   background-image: url(./images/check-icon.png);
@@ -247,8 +258,6 @@ background: #FFF; */
   text-decoration: underline;
 }
 .log-in {
-  
-  
   color: #e0e0e0;
   font-family: Rubik;
   font-size: 15px;

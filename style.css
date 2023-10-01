@@ -77,15 +77,18 @@ body {
 }
 .elem1 {
   position: absolute;
+  z-index: -2;
   left: 0;
 }
 .elem2 {
   position: absolute;
+  z-index: -2;
   bottom: 5%;
   right: 0;
 }
 .elem3 {
   position: absolute;
+  z-index: -2;
   top: 0;
   right: 22%;
 }

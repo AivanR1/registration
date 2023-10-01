@@ -1,18 +1,20 @@
-@media all and (max-width: 650px) {
-    .body{
-        justify-content: center;
-        align-items: center;
-    };
-    .signUp-btn {
-        width: 300px;
-        background-color: aquamarine;
-    };
-    .main-c{
-        display: none;
-        justify-content:center ;
-        align-items: center;
-    }
-    .inputs-bc{
-    align-items: center;
-    }
+@media screen and (max-width: 650px) {
+  body {
+    justify-content: center;
+    
+    /* background: brown; */
+  }
+  .signUp-btn {
+    width: 300px;
+    background-color: aquamarine;
+    color: black;
+  }
+  .signUp-btn a{
+    color: black;}
+  .main-c {
+    
+    justify-content: space-evenly;
+    
+  }
+  
 }
