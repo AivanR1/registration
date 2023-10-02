@@ -1,6 +1,6 @@
 @media screen and (max-width: 650px) {
   .background{
-    
+    overflow: auto;
     
     /* background: brown; */
   }
@@ -11,11 +11,28 @@
   }
   .signUp-btn a{
     color: black;}
-  .main-c {
-    justify-content: space-around;
-    align-items: center;
-    
-    
-  }
   
+  .inputs-bc{
+    gap: 20px;
+    justify-content: center;
+  }
+  .elem1  {
+    display: none;
+  }
+  .elem2 {
+    display: none;
+  }
+  .elem3 {
+    display: none;
+  }
+  .elem4 {
+    display: block;
+  }
+
+  .elem5 {
+    display: block;
+  }
+  .elem6 {
+    display: block;
+  }
 }
