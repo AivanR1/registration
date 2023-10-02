@@ -195,6 +195,7 @@ background: #FFF; */
   display: flex;
   justify-content: center;
   align-items: center;
+
   background-color: transparent;
   color: #6ceec7;
   text-align: center;
@@ -300,6 +301,7 @@ background: #FFF; */
 .elem6.none{
   position: absolute;
   bottom: 0;
-  right: 20%;
+  right: 0;
+
 }
 

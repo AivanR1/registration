@@ -12,6 +12,10 @@
   .signUp-btn a{
     color: black;}
   
+    .main-c{
+      overflow-y: auto;
+      height: auto;
+    }
   .inputs-bc{
     gap: 20px;
     height: 100%;
